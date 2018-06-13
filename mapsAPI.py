@@ -21,13 +21,14 @@ while True:
         break
 
     # This is where we will append our user input into the request
+    # and print out the request URL sent to the API
     url = main_api + urllib.parse.urlencode({'address': address})
-    # print(url)
+    print(url)
 
-    # These lines provide the constructed URL where we will be finding all the data
-    # Left here in case we want to see the full URL and grab MORE information for the user
-    # json_data = requests.get(url).json()
-    # print(json_data)
+    # These lines provide the constructed URL where we will be finding all the Json data
+    # This is where all our data pulled from the API is stored
+    json_data = requests.get(url).json()
+    #print(json_data)
 
     # This line lets us know if our query worked or not
     json_status = json_data['status']
