@@ -1,6 +1,7 @@
 # GoogleMapsAPI
-# Basic testing of Python use with API calls
-# MUST be using Python 3.6 to run and MUST use below libraries
+
+Basic testing of Python use with API calls
+MUST be using Python 3.6 to run and MUST use below libraries
 
 Libraries used: "urllib" and "requests"
 -Installed in command line via commands: 
